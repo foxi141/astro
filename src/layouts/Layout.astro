@@ -1,0 +1,47 @@
+---
+import Card from "../components/card.astro";
+---
+
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width-device-width"/>
+  <title>Welconme</title>
+  <style>
+    html{
+      background-image:url(https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-6.gif) ;
+    
+    }
+    
+   .link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+
+  </style>
+
+</head>
+<body>
+ <ul role ="list" class="link-card-grid">
+  <Card title="FAQ" 
+  href="/faq"/>
+  <Card title="Boosting" 
+  href="/boosting"/>
+  <Card title="Accounts" 
+  href="/accounts"/>
+  <Card title="Coaching" 
+  href="/coaching"/>
+  <Card title="Contact" 
+  href="/contact"/>
+
+ </ul>
+  
+  
+  <slot></slot>
+
+</body>
+</html>
